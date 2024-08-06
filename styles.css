@@ -460,6 +460,7 @@ footer .arriba {
         display: none;
     }
     #sucursales .contenedor-sucursales {
+        max-width: 1000px;
         background: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)), url(./img/Fondo\ 2.jpg);
         background-size: cover;
         background-position: center;
