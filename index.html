@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viveros El Botanico</title>
+    <!--FAVICON-->
+    <link rel="shortcut icon" href="./img/Logo vi.png" type="image/x-icon">
+    <!--CDN-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--ANIMATE-->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <!--BOOTSTRAP ICONS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!--CSS-->
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <!--SECCION INICIO-->
+<section id="inicio">
+    <div class="contenido">
+        <header>
+            <div class="contenido-header">
+                <a href="#inicio"><img src="./img/Logo vi.png" alt="logo"></a>
+                <nav id="nav">
+                    <ul id="links">
+                        <li class="animate__animated animate__backInDown item1"><a href="#inicio" onclick="seleccionar()" class="seleccionado">INICIO</a></li>
+                        <li class="animate__animated animate__backInDown item2"><a href="#sucursales" onclick="seleccionar()">SUCURSALES</a></li>
+                        <li class="animate__animated animate__backInDown item3"><a href="#productos" onclick="seleccionar()">PRODUCTOS</a></li>
+                        <li class="animate__animated animate__backInDown item4"><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                    </ul>
+                </nav>
+                <!--ICONOS MENU RESPONSIVE-->
+                <div id="icono-nav" onclick="mostrarOcultarMenu()">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+                <div class="redes">
+                  <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                  <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                  <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+            </div>
+        </header>
+        <div class="presentacion">
+            <h3>Viveros el Botanico</h3>
+            <p>40 años en el jardín de todos los argentinos</p>
+        </div>
+    </div>
+</section>
+<!--SECCION SUCURSALES-->
+<section id="sucursales">
+    <h3>SUCURSALES</h3>
+    <div class="contenedor-sucursales">
+         <div class="contenedor-foto">
+              <img src="./img/Fondo 2.jpg" alt="">
+         </div>
+         <div class="info">
+              <h5>PANAMERICANA</h5>
+              <p>Colectora Panamericana 1618, El talar</p>
+              <p>Lunes a Sabados de 8 a 18</p>
+              <p>7547-9867</p>
+              <h5>LIBERTADOR</h5>
+              <p>J F Kennedy 347, San Fernando</p>
+              <p>Lunes a Sabados de 8 a 18</p>
+              <p>7547-9867</p>
+         </div>
+    </div> 
+</section>
+<!--SECCION PRODUCTOS-->
+<section id="productos">
+    <h3>PRODUCTOS</h3>
+    <div class="cajita_produ row mt-0 g-3">
+        <div class="col-md-6 col-12 my-2">
+          <div class="card">
+            <img src="../img/Plantas.jpg" class="oscurecer img-fluid" alt="Plantas">
+            <a href="./pages/plantas.html">
+              <div class="card-img-overlay d-flex flex-column justify-content-center">
+                <p class="p_produ">PLANTAS</p></div>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-6 col-12 my-2">
+          <div class="card">
+            <img src="./img/Macetas.jpg" class="oscurecer img-fluid" alt="Macetas">
+            <a href="../pages/macetas.html">
+              <div class="card-img-overlay d-flex flex-column justify-content-center">
+                <p class="p_produ">MACETAS</p></div>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-6 col-12 my-2">
+          <div class="card">
+            <img src="../img/Jardineria.jpg" class="oscurecer img-fluid" alt="Jardineria">
+            <a href="./pages/jardineria.html">
+              <div class="card-img-overlay d-flex flex-column justify-content-center">
+                <p class="p_produ">JARDINERIA</p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-6 col-12 my-2">
+          <div class="card">
+            <img src="./img/semilla.jpg" class="oscurecer img-fluid" alt="Semilla">
+            <a href="./pages/semillas.html">
+              <div class="card-img-overlay d-flex flex-column justify-content-center">
+                <p class="p_produ">SEMILLAS</p>
+            </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+</section>
+<!--SECCION CONTACTO-->
+<section id="contacto">
+  <h3>CONTACTO</h3>
+  <div class="contain-contacto">
+    <div class="formulario">
+      <form action="">
+        <input type="text" placeholder="NOMBRE">
+        <input type="email" placeholder="CORREO ELECTRONICO">
+        <input type="text" placeholder="TELEFONO">
+        <textarea name="" id="" cols="30" rows="7" placeholder="DEJANOS TU CONSULTA"></textarea>
+        <div class="bot">
+          <button class="boton">enviar</button>
+          <button class="boton">borrar</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+<!--SECCION FOOTER-->
+<footer>
+  <a href="#inicio" class="arriba">
+    <i class="fa-solid fa-angles-up"></i>
+</a>
+<div class="redes-footer">
+  <a href="#"><i class="fa-brands fa-instagram"></i></a>
+  <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+  <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+</div>
+</footer>
+
+
+<!--LINK BOOTSTRAP JAVA-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<!--JAVA-->
+<script src="script.js"></script>
+
+</body>
+</html>
