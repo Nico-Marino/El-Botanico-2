@@ -182,7 +182,6 @@ html {
     font-size: 2.4rem;
     font-weight: bold;
     color: #e5e5eb;
-    text-shadow: 3px 1px 10px #c41d1c;
     text-align: center;
 }
 .cartita .back h4 {
@@ -317,8 +316,8 @@ html {
 }
 .boton-volver a {
     text-decoration: none;
-    color: #a3b18a;
-    font-size: 1.5rem;
+    color: #c41d1c;
+    font-size: 1.2rem;
     transition: .5s;
 }
 .boton-volver a:hover {
@@ -383,7 +382,8 @@ html {
     color: #2c4836;
     transition: 1s;
     font-weight: bold;
-    border: .3px solid #2c4836;
+    background-color: #a3b18a;
+    color: #fefeff;
 }
 /*CONTACTO*/
 #contacto {
